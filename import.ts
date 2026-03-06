@@ -1,17 +1,13 @@
 import { PrismaClient } from '@prisma/client'
 import { PrismaLibSql } from '@prisma/adapter-libsql'
+import { execSync } from 'child_process'
 import * as fs from 'fs'
 import * as path from 'path'
-
-const adapter = new PrismaLibSql({
-  url: process.env.DATABASE_URL!,
-})
-const prisma = new PrismaClient({ adapter })
 
 interface TestData {
   Currency: Array<{ code: string; symbol: string; order: number }>
   Account: Array<{ id: string; name: string; type: string; currencyCode: string; color: string | null }>
-  CategoryGroup: Array<{ id: string; name: string; order: number }>
+  CategoryGroup: Array<{ id: string; name: string; order: number; [key: string]: unknown }>
   Category: Array<{ id: string; groupId: string; name: string; order: number }>
   CategoryBudget: Array<{ id: string; categoryId: string; currencyCode: string; month: string; amount: number }>
   CategoryTarget: Array<{ id: string; categoryId: string; currencyCode: string; type: string; amount: number; targetDate: string | null; cadence: string | null; cadenceInterval: number | null }>
@@ -23,6 +19,20 @@ interface TestData {
 }
 
 async function main() {
+  const projectRoot = path.resolve(__dirname, '..')
+  const dbPath = path.resolve(projectRoot, 'dev.db')
+
+  // Ensure schema is up to date (creates DB if missing)
+  console.log('Syncing database schema...')
+  execSync('npx prisma db push --accept-data-loss', {
+    cwd: projectRoot,
+    stdio: 'inherit',
+  })
+
+  const dbUrl = process.env.DATABASE_URL || `file:${dbPath}`
+  const adapter = new PrismaLibSql({ url: dbUrl })
+  const prisma = new PrismaClient({ adapter })
+
   const dataPath = process.argv[2] || path.join(__dirname, 'testdata.json')
   const data: TestData = JSON.parse(fs.readFileSync(dataPath, 'utf-8'))
 
@@ -50,7 +60,7 @@ async function main() {
   }
 
   console.log('Importing category groups...')
-  for (const g of data.CategoryGroup) {
+  for (const { is_hidden, ...g } of data.CategoryGroup) {
     await prisma.categoryGroup.create({ data: g })
   }
 
@@ -106,14 +116,11 @@ async function main() {
   console.log(`  ${data.InvestmentValueHistory.length} investment value history entries`)
   console.log(`  ${data.Transaction.length} transactions`)
   console.log(`  ${data.Subtransaction.length} subtransactions`)
+
+  await prisma.$disconnect()
 }
 
-main()
-  .then(async () => {
-    await prisma.$disconnect()
-  })
-  .catch(async (e) => {
-    console.error(e)
-    await prisma.$disconnect()
-    process.exit(1)
-  })
+main().catch(async (e) => {
+  console.error(e)
+  process.exit(1)
+})

@@ -16,7 +16,7 @@ async function main() {
     Category: await prisma.category.findMany({ orderBy: { order: 'asc' } }),
     CategoryBudget: await prisma.categoryBudget.findMany(),
     CategoryTarget: await prisma.categoryTarget.findMany(),
-    Rule: await prisma.rule.findMany({ orderBy: { order: 'asc' } }),
+    Rule: await prisma.rule.findMany(),
     Investment: await prisma.investment.findMany(),
     InvestmentValueHistory: await prisma.investmentValueHistory.findMany({ orderBy: { date: 'asc' } }),
     Transaction: await prisma.transaction.findMany({ orderBy: { date: 'asc' } }),
