@@ -1,0 +1,711 @@
+{
+  "Currency": [
+    {
+      "code": "UYU",
+      "symbol": "$",
+      "order": 0
+    },
+    {
+      "code": "USD",
+      "symbol": "USD",
+      "order": 1
+    }
+  ],
+  "Account": [
+    {
+      "id": "94dc5de7-63aa-49d3-b890-4445b038b97c",
+      "name": "Itaú",
+      "type": "assets",
+      "currencyCode": "UYU",
+      "color": "#f59e0b",
+      "createdAt": "2026-03-05T23:34:11.611+00:00",
+      "updatedAt": "2026-03-06T01:42:05.539+00:00"
+    },
+    {
+      "id": "37dd35e8-fb08-4906-b730-5788019d5426",
+      "name": "Itaú (USD)",
+      "type": "assets",
+      "currencyCode": "USD",
+      "color": "#f59e0b",
+      "createdAt": "2026-03-05T23:34:24.354+00:00",
+      "updatedAt": "2026-03-05T23:34:24.354+00:00"
+    },
+    {
+      "id": "1e5a3b21-6302-41a7-a950-f5d4e6707f34",
+      "name": "Crédito Itaú",
+      "type": "creditCard",
+      "currencyCode": "UYU",
+      "color": "#8b5cf6",
+      "createdAt": "2026-03-06T01:36:52.368+00:00",
+      "updatedAt": "2026-03-06T01:36:52.368+00:00"
+    }
+  ],
+  "CategoryGroup": [
+    {
+      "id": "edd6ac4a-6ac1-49fe-ad30-15f74b4ac753",
+      "name": "Split",
+      "is_hidden": 0,
+      "order": 1
+    },
+    {
+      "id": "11ab21df-2aac-485f-a01e-2360e356312b",
+      "name": "Needs",
+      "is_hidden": 0,
+      "order": 2
+    },
+    {
+      "id": "626cfc27-6f5e-4230-a236-691e217d52ec",
+      "name": "Wants",
+      "is_hidden": 0,
+      "order": 3
+    },
+    {
+      "id": "d38cb47e-4b30-4da2-aa82-5dac9d2586f0",
+      "name": "Bills",
+      "is_hidden": 0,
+      "order": 4
+    },
+    {
+      "id": "0f8b4adb-b525-4248-818f-87d86818bfaf",
+      "name": "Subs",
+      "is_hidden": 0,
+      "order": 5
+    },
+    {
+      "id": "ad6fe8ca-092c-4fd0-9ab7-9f3b17019a9e",
+      "name": "Savings",
+      "is_hidden": 0,
+      "order": 6
+    }
+  ],
+  "Category": [
+    {
+      "id": "be07ca51-7995-42eb-8023-7e02bb4617d2",
+      "groupId": "edd6ac4a-6ac1-49fe-ad30-15f74b4ac753",
+      "name": "➗ Splitwise",
+      "order": 0
+    },
+    {
+      "id": "160a80ba-5262-4cc1-9d9c-c84056547ffc",
+      "groupId": "11ab21df-2aac-485f-a01e-2360e356312b",
+      "name": "🛒 Groceries",
+      "order": 0
+    },
+    {
+      "id": "53f0c59c-91fc-4509-863e-c4bbc08d8d31",
+      "groupId": "11ab21df-2aac-485f-a01e-2360e356312b",
+      "name": "🔥 Gas",
+      "order": 1
+    },
+    {
+      "id": "02de88a2-5c29-4092-a196-df60003a6093",
+      "groupId": "11ab21df-2aac-485f-a01e-2360e356312b",
+      "name": "🚕 Transporte",
+      "order": 2
+    },
+    {
+      "id": "31ca4efb-f208-4b37-92da-07053a6f3a0e",
+      "groupId": "11ab21df-2aac-485f-a01e-2360e356312b",
+      "name": "🐶 Mascotas",
+      "order": 3
+    },
+    {
+      "id": "d3b1cbe4-036a-4ed8-911a-b798fad1bca9",
+      "groupId": "11ab21df-2aac-485f-a01e-2360e356312b",
+      "name": "✂️ Peluquería",
+      "order": 4
+    },
+    {
+      "id": "e1945917-4dcb-4162-9c2e-2c96ee875583",
+      "groupId": "11ab21df-2aac-485f-a01e-2360e356312b",
+      "name": "💊 Anticonceptivos",
+      "order": 5
+    },
+    {
+      "id": "6d7817f0-615b-4989-96f2-ede8354d0d86",
+      "groupId": "11ab21df-2aac-485f-a01e-2360e356312b",
+      "name": "👓 Lentes",
+      "order": 8
+    },
+    {
+      "id": "d6455802-e649-429a-80d4-5ff9ae53c1a6",
+      "groupId": "11ab21df-2aac-485f-a01e-2360e356312b",
+      "name": "🪳 Fumigación",
+      "order": 6
+    },
+    {
+      "id": "2e2b6403-ab6d-431c-a6c9-2a9900c6526f",
+      "groupId": "11ab21df-2aac-485f-a01e-2360e356312b",
+      "name": "💨 Mantenimiento AC",
+      "order": 7
+    },
+    {
+      "id": "5fbcacfc-dd50-4fd5-9548-6c49799379c4",
+      "groupId": "626cfc27-6f5e-4230-a236-691e217d52ec",
+      "name": "💰 My Spending Money",
+      "order": 0
+    },
+    {
+      "id": "29064085-6af7-4ba7-94c8-142cb6fbe7f1",
+      "groupId": "626cfc27-6f5e-4230-a236-691e217d52ec",
+      "name": "🍽️ Dining Out",
+      "order": 1
+    },
+    {
+      "id": "47bde083-6862-47ad-adf6-523292428173",
+      "groupId": "626cfc27-6f5e-4230-a236-691e217d52ec",
+      "name": "🎁 Regalos",
+      "order": 2
+    },
+    {
+      "id": "cfbd9443-7101-4d3a-b8fe-b87437dcc855",
+      "groupId": "626cfc27-6f5e-4230-a236-691e217d52ec",
+      "name": "👕 Ropa",
+      "order": 3
+    },
+    {
+      "id": "11daa2dc-856f-4259-8afe-11025b9248a7",
+      "groupId": "626cfc27-6f5e-4230-a236-691e217d52ec",
+      "name": "⛱️ Vacaciones",
+      "order": 4
+    },
+    {
+      "id": "85b1532a-08c7-476e-b56c-2d76f126609b",
+      "groupId": "626cfc27-6f5e-4230-a236-691e217d52ec",
+      "name": "🪴 Home",
+      "order": 5
+    },
+    {
+      "id": "8a681922-f1f4-4292-9e88-34db7a07b640",
+      "groupId": "626cfc27-6f5e-4230-a236-691e217d52ec",
+      "name": "🎮 Videogames",
+      "order": 6
+    },
+    {
+      "id": "6434a9ed-1b94-43cc-8d3c-5438bb67f45e",
+      "groupId": "d38cb47e-4b30-4da2-aa82-5dac9d2586f0",
+      "name": "🏠 Alquiler/Gastos Comunes",
+      "order": 0
+    },
+    {
+      "id": "d26256d8-a04e-47af-b3b4-836c4c06906d",
+      "groupId": "d38cb47e-4b30-4da2-aa82-5dac9d2586f0",
+      "name": "🏥 Salud",
+      "order": 1
+    },
+    {
+      "id": "44b27558-e19d-42e8-a8c6-1a264ef426b6",
+      "groupId": "d38cb47e-4b30-4da2-aa82-5dac9d2586f0",
+      "name": "🔌 Electricidad",
+      "order": 2
+    },
+    {
+      "id": "f3f9632b-dc0d-42fb-901c-d21c31197dfd",
+      "groupId": "d38cb47e-4b30-4da2-aa82-5dac9d2586f0",
+      "name": "🌐 Internet",
+      "order": 3
+    },
+    {
+      "id": "1a2d640b-853f-4e70-bc5b-d21114470c5e",
+      "groupId": "d38cb47e-4b30-4da2-aa82-5dac9d2586f0",
+      "name": "💪🏻 Gym",
+      "order": 4
+    },
+    {
+      "id": "2fb7070e-d745-4963-97af-8f9f863d5b5e",
+      "groupId": "0f8b4adb-b525-4248-818f-87d86818bfaf",
+      "name": "💸 Fees",
+      "order": 0
+    },
+    {
+      "id": "10817de4-0b1f-479b-9762-259f65dcf43f",
+      "groupId": "0f8b4adb-b525-4248-818f-87d86818bfaf",
+      "name": "Google One",
+      "order": 1
+    },
+    {
+      "id": "081e99a4-cf74-4c1b-bd73-f2327403a063",
+      "groupId": "0f8b4adb-b525-4248-818f-87d86818bfaf",
+      "name": "🍿 Debrid",
+      "order": 2
+    },
+    {
+      "id": "f53b27d8-d5ce-4039-b424-cb13d355848f",
+      "groupId": "ad6fe8ca-092c-4fd0-9ab7-9f3b17019a9e",
+      "name": "🏰 New Home",
+      "order": 0
+    },
+    {
+      "id": "14fb7adc-bbbd-4dad-a3a4-d7c271e3a721",
+      "groupId": "ad6fe8ca-092c-4fd0-9ab7-9f3b17019a9e",
+      "name": "💍 Wedding",
+      "order": 1
+    },
+    {
+      "id": "e51a3e91-394f-437b-b72b-c2f81223f727",
+      "groupId": "ad6fe8ca-092c-4fd0-9ab7-9f3b17019a9e",
+      "name": "✈️ Viajes",
+      "order": 2
+    },
+    {
+      "id": "375f91f1-518f-4f5e-b0e6-22089f7734ca",
+      "groupId": "ad6fe8ca-092c-4fd0-9ab7-9f3b17019a9e",
+      "name": "👨🏻‍💻 Tech",
+      "order": 3
+    }
+  ],
+  "CategoryBudget": [
+    {
+      "id": "514ab681-85c0-453a-9136-4366a382ae3d",
+      "categoryId": "160a80ba-5262-4cc1-9d9c-c84056547ffc",
+      "currencyCode": "UYU",
+      "month": "2026-03",
+      "amount": 9000000
+    },
+    {
+      "id": "79f4030d-8fbd-4966-a197-2cec742483d1",
+      "categoryId": "02de88a2-5c29-4092-a196-df60003a6093",
+      "currencyCode": "UYU",
+      "month": "2026-03",
+      "amount": 2000000
+    },
+    {
+      "id": "ba350b57-752c-4490-b552-3b6c86a15bb0",
+      "categoryId": "31ca4efb-f208-4b37-92da-07053a6f3a0e",
+      "currencyCode": "UYU",
+      "month": "2026-03",
+      "amount": 700000
+    },
+    {
+      "id": "40a90baa-4cec-4b63-87ca-2586b5af8f17",
+      "categoryId": "d3b1cbe4-036a-4ed8-911a-b798fad1bca9",
+      "currencyCode": "UYU",
+      "month": "2026-03",
+      "amount": 0
+    },
+    {
+      "id": "4fd5364a-c5e4-40b0-97e4-d42ee81eba01",
+      "categoryId": "d6455802-e649-429a-80d4-5ff9ae53c1a6",
+      "currencyCode": "UYU",
+      "month": "2026-03",
+      "amount": 166667
+    },
+    {
+      "id": "188d91e7-1c60-4705-844c-fddd63c05d11",
+      "categoryId": "2e2b6403-ab6d-431c-a6c9-2a9900c6526f",
+      "currencyCode": "UYU",
+      "month": "2026-03",
+      "amount": 125000
+    },
+    {
+      "id": "b60a7ded-26a8-40c9-9d49-f5db7343edaa",
+      "categoryId": "6d7817f0-615b-4989-96f2-ede8354d0d86",
+      "currencyCode": "UYU",
+      "month": "2026-03",
+      "amount": 312500
+    },
+    {
+      "id": "c33eca6b-d007-463d-ae52-878d00adc3db",
+      "categoryId": "29064085-6af7-4ba7-94c8-142cb6fbe7f1",
+      "currencyCode": "UYU",
+      "month": "2026-03",
+      "amount": 6000000
+    },
+    {
+      "id": "94e6604c-0241-4900-8d67-b00a78da5f55",
+      "categoryId": "47bde083-6862-47ad-adf6-523292428173",
+      "currencyCode": "UYU",
+      "month": "2026-03",
+      "amount": 2000000
+    },
+    {
+      "id": "88a7b2b6-3238-40ad-a42e-04a5a923055a",
+      "categoryId": "cfbd9443-7101-4d3a-b8fe-b87437dcc855",
+      "currencyCode": "UYU",
+      "month": "2026-03",
+      "amount": 2000000
+    },
+    {
+      "id": "5de363ce-6b16-4688-90db-6eb2ae0b237d",
+      "categoryId": "11daa2dc-856f-4259-8afe-11025b9248a7",
+      "currencyCode": "UYU",
+      "month": "2026-03",
+      "amount": 1000000
+    },
+    {
+      "id": "5fb66d46-44a1-4386-8a6a-4c6e506a19e9",
+      "categoryId": "85b1532a-08c7-476e-b56c-2d76f126609b",
+      "currencyCode": "UYU",
+      "month": "2026-03",
+      "amount": 2000000
+    },
+    {
+      "id": "49abcc2f-2fd8-4a10-9a8b-361cb01a7364",
+      "categoryId": "8a681922-f1f4-4292-9e88-34db7a07b640",
+      "currencyCode": "UYU",
+      "month": "2026-03",
+      "amount": 1000000
+    },
+    {
+      "id": "393c47e8-9f1f-4fc4-b606-fc7174599ddf",
+      "categoryId": "6434a9ed-1b94-43cc-8d3c-5438bb67f45e",
+      "currencyCode": "UYU",
+      "month": "2026-03",
+      "amount": 16500000
+    },
+    {
+      "id": "22a5ba6d-a5d2-4098-b4e2-376ddcc8dc9a",
+      "categoryId": "d26256d8-a04e-47af-b3b4-836c4c06906d",
+      "currencyCode": "UYU",
+      "month": "2026-03",
+      "amount": 6916000
+    },
+    {
+      "id": "750caa87-f3b8-40ff-9c68-9be76f763de0",
+      "categoryId": "44b27558-e19d-42e8-a8c6-1a264ef426b6",
+      "currencyCode": "UYU",
+      "month": "2026-03",
+      "amount": 870000
+    },
+    {
+      "id": "ee2ca762-fcc7-45eb-9ba6-ef75d956f240",
+      "categoryId": "f3f9632b-dc0d-42fb-901c-d21c31197dfd",
+      "currencyCode": "UYU",
+      "month": "2026-03",
+      "amount": 798000
+    },
+    {
+      "id": "2cbaf8cb-56e2-4927-bfb1-ecb1242d752e",
+      "categoryId": "2fb7070e-d745-4963-97af-8f9f863d5b5e",
+      "currencyCode": "UYU",
+      "month": "2026-03",
+      "amount": 1475000
+    },
+    {
+      "id": "9c4c37fb-cd7b-4439-a4ad-a1131dc86ad8",
+      "categoryId": "10817de4-0b1f-479b-9762-259f65dcf43f",
+      "currencyCode": "UYU",
+      "month": "2026-03",
+      "amount": 61000
+    }
+  ],
+  "CategoryTarget": [
+    {
+      "id": "70f585b4-deb5-4b88-9195-6fc88057a784",
+      "categoryId": "6434a9ed-1b94-43cc-8d3c-5438bb67f45e",
+      "currencyCode": "UYU",
+      "type": "fill_up_to",
+      "amount": 16500000,
+      "cadence": "monthly",
+      "interval": 1,
+      "targetDate": null
+    },
+    {
+      "id": "2280d1b2-f4c5-4cba-8e5e-e574d7007614",
+      "categoryId": "d26256d8-a04e-47af-b3b4-836c4c06906d",
+      "currencyCode": "UYU",
+      "type": "fill_up_to",
+      "amount": 6916000,
+      "cadence": "monthly",
+      "interval": 1,
+      "targetDate": null
+    },
+    {
+      "id": "fc7f1a0b-4c86-4fb5-98a9-b7e52f1a78ad",
+      "categoryId": "2fb7070e-d745-4963-97af-8f9f863d5b5e",
+      "currencyCode": "UYU",
+      "type": "fill_up_to",
+      "amount": 1475000,
+      "cadence": "monthly",
+      "interval": 1,
+      "targetDate": null
+    },
+    {
+      "id": "9047f55d-7eb4-46af-924a-133a03757129",
+      "categoryId": "44b27558-e19d-42e8-a8c6-1a264ef426b6",
+      "currencyCode": "UYU",
+      "type": "fill_up_to",
+      "amount": 870000,
+      "cadence": "monthly",
+      "interval": 1,
+      "targetDate": null
+    },
+    {
+      "id": "d672971d-86df-4512-9883-f9fe05045589",
+      "categoryId": "f3f9632b-dc0d-42fb-901c-d21c31197dfd",
+      "currencyCode": "UYU",
+      "type": "fill_up_to",
+      "amount": 798000,
+      "cadence": "monthly",
+      "interval": 1,
+      "targetDate": null
+    },
+    {
+      "id": "1758913f-a63f-485f-8940-f94fb2d9004e",
+      "categoryId": "160a80ba-5262-4cc1-9d9c-c84056547ffc",
+      "currencyCode": "UYU",
+      "type": "fill_up_to",
+      "amount": 9000000,
+      "cadence": "monthly",
+      "interval": 1,
+      "targetDate": null
+    },
+    {
+      "id": "5db2eaa7-42d8-4b92-98bc-37e2c668ec9f",
+      "categoryId": "02de88a2-5c29-4092-a196-df60003a6093",
+      "currencyCode": "UYU",
+      "type": "fill_up_to",
+      "amount": 2000000,
+      "cadence": "monthly",
+      "interval": 1,
+      "targetDate": null
+    },
+    {
+      "id": "eff372af-8a37-443e-b676-8f9b28d3a49f",
+      "categoryId": "31ca4efb-f208-4b37-92da-07053a6f3a0e",
+      "currencyCode": "UYU",
+      "type": "fill_up_to",
+      "amount": 700000,
+      "cadence": "monthly",
+      "interval": 1,
+      "targetDate": null
+    },
+    {
+      "id": "f810c516-ebc2-4dfa-8643-bc3da7a21e89",
+      "categoryId": "29064085-6af7-4ba7-94c8-142cb6fbe7f1",
+      "currencyCode": "UYU",
+      "type": "fill_up_to",
+      "amount": 6000000,
+      "cadence": "monthly",
+      "interval": 1,
+      "targetDate": null
+    },
+    {
+      "id": "d1512413-ae1c-4a4b-bfef-a4daeef7abea",
+      "categoryId": "47bde083-6862-47ad-adf6-523292428173",
+      "currencyCode": "UYU",
+      "type": "fill_up_to",
+      "amount": 2000000,
+      "cadence": "monthly",
+      "interval": 1,
+      "targetDate": null
+    },
+    {
+      "id": "46cb2d21-0afd-4c6c-b891-fc8c4ca83cca",
+      "categoryId": "10817de4-0b1f-479b-9762-259f65dcf43f",
+      "currencyCode": "UYU",
+      "type": "fill_up_to",
+      "amount": 61000,
+      "cadence": "monthly",
+      "interval": 1,
+      "targetDate": null
+    },
+    {
+      "id": "c7e03fc8-9461-4c03-b125-32a15f692ae5",
+      "categoryId": "d3b1cbe4-036a-4ed8-911a-b798fad1bca9",
+      "currencyCode": "UYU",
+      "type": "fill_up_to",
+      "amount": 500000,
+      "cadence": "monthly",
+      "interval": 3,
+      "targetDate": null
+    },
+    {
+      "id": "c5e1c5a7-0f2d-479a-a3ec-b448a9f5c56c",
+      "categoryId": "6d7817f0-615b-4989-96f2-ede8354d0d86",
+      "currencyCode": "UYU",
+      "type": "by_date",
+      "amount": 5000000,
+      "cadence": "monthly",
+      "interval": 1,
+      "targetDate": "2027-08-01T00:00:00.000+00:00"
+    },
+    {
+      "id": "d183bacd-e4a0-47c6-a732-aa56560cb9f5",
+      "categoryId": "d6455802-e649-429a-80d4-5ff9ae53c1a6",
+      "currencyCode": "UYU",
+      "type": "fill_up_to",
+      "amount": 1000000,
+      "cadence": "monthly",
+      "interval": 6,
+      "targetDate": null
+    },
+    {
+      "id": "5aa23631-e6b6-4528-b323-e47af03420c5",
+      "categoryId": "2e2b6403-ab6d-431c-a6c9-2a9900c6526f",
+      "currencyCode": "UYU",
+      "type": "fill_up_to",
+      "amount": 1500000,
+      "cadence": "yearly",
+      "interval": 1,
+      "targetDate": null
+    },
+    {
+      "id": "2fa4c80f-9e23-46f4-b58f-e8ff63b22307",
+      "categoryId": "cfbd9443-7101-4d3a-b8fe-b87437dcc855",
+      "currencyCode": "UYU",
+      "type": "fill_up_to",
+      "amount": 2000000,
+      "cadence": "monthly",
+      "interval": 1,
+      "targetDate": null
+    },
+    {
+      "id": "b8ef509c-1a25-4d03-a575-445712125917",
+      "categoryId": "8a681922-f1f4-4292-9e88-34db7a07b640",
+      "currencyCode": "UYU",
+      "type": "fill_up_to",
+      "amount": 3000000,
+      "cadence": "monthly",
+      "interval": 3,
+      "targetDate": null
+    },
+    {
+      "id": "a148f096-b7e0-4850-b3dd-979df6b7712a",
+      "categoryId": "85b1532a-08c7-476e-b56c-2d76f126609b",
+      "currencyCode": "UYU",
+      "type": "fill_up_to",
+      "amount": 2000000,
+      "cadence": "monthly",
+      "interval": 1,
+      "targetDate": null
+    },
+    {
+      "id": "dd410281-cec3-4179-92e7-57e8a2ef1b8b",
+      "categoryId": "11daa2dc-856f-4259-8afe-11025b9248a7",
+      "currencyCode": "UYU",
+      "type": "add_amount",
+      "amount": 1000000,
+      "cadence": "monthly",
+      "interval": 1,
+      "targetDate": null
+    }
+  ],
+  "Rule": [
+    {
+      "id": "0a4f65d3-85cb-44b1-8bb8-4cd68eab6793",
+      "payeeContains": "Supermarket",
+      "categoryId": "160a80ba-5262-4cc1-9d9c-c84056547ffc",
+      "memo": "Groceries shopping",
+      "createdAt": "2026-03-06T03:23:03.407+00:00",
+      "updatedAt": "2026-03-06T03:23:03.407+00:00"
+    }
+  ],
+  "Investment": [
+    {
+      "id": "3bf2082b-680b-4e7a-bf4e-34ca18a951f2",
+      "name": "Itau Index",
+      "currencyCode": "UYU",
+      "color": "#f59e0b",
+      "totalDeposited": 79297290,
+      "totalWithdrawn": 0,
+      "currentValue": 79672430,
+      "note": null,
+      "createdAt": "2026-03-06T02:36:44.173Z",
+      "updatedAt": "2026-03-06T02:36:44.173Z"
+    }
+  ],
+  "InvestmentValueHistory": [
+    {
+      "id": "77208b42-780a-469b-990b-d62700b913d8",
+      "investmentId": "3bf2082b-680b-4e7a-bf4e-34ca18a951f2",
+      "value": 68597290,
+      "date": "2025-10-12T00:00:00.000Z",
+      "source": "deposit",
+      "createdAt": "2026-03-06T02:36:44.173Z",
+      "transactionId": null,
+      "transferAmount": 68597290
+    },
+    {
+      "id": "00f9cc29-6833-4a24-968f-d4079fa7553a",
+      "investmentId": "3bf2082b-680b-4e7a-bf4e-34ca18a951f2",
+      "value": 68648700,
+      "date": "2025-10-14T00:00:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-03-06T02:36:44.173Z",
+      "transactionId": null,
+      "transferAmount": null
+    },
+    {
+      "id": "000cbb05-4228-4b3a-972e-1e885d0040ac",
+      "investmentId": "3bf2082b-680b-4e7a-bf4e-34ca18a951f2",
+      "value": 68681650,
+      "date": "2025-10-16T00:00:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-03-06T02:36:44.173Z",
+      "transactionId": null,
+      "transferAmount": null
+    },
+    {
+      "id": "ac2b2a76-7606-47e3-bb75-604d3a661141",
+      "investmentId": "3bf2082b-680b-4e7a-bf4e-34ca18a951f2",
+      "value": 68708510,
+      "date": "2025-10-20T00:00:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-03-06T02:36:44.173Z",
+      "transactionId": null,
+      "transferAmount": null
+    },
+    {
+      "id": "7db82841-5cf8-46ca-8065-e9efb445694c",
+      "investmentId": "3bf2082b-680b-4e7a-bf4e-34ca18a951f2",
+      "value": 68849170,
+      "date": "2025-11-03T00:00:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-03-06T02:36:44.173Z",
+      "transactionId": null,
+      "transferAmount": null
+    },
+    {
+      "id": "7dcb5ebe-1cec-4f92-bb95-238cc18f8487",
+      "investmentId": "3bf2082b-680b-4e7a-bf4e-34ca18a951f2",
+      "value": 79549170,
+      "date": "2025-11-03T00:00:00.000Z",
+      "source": "deposit",
+      "createdAt": "2026-03-06T02:36:44.173Z",
+      "transactionId": null,
+      "transferAmount": 10700000
+    },
+    {
+      "id": "031860c9-7a26-4ecd-92f0-ca75278f2de2",
+      "investmentId": "3bf2082b-680b-4e7a-bf4e-34ca18a951f2",
+      "value": 79672430,
+      "date": "2025-11-10T00:00:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-03-06T02:36:44.173Z",
+      "transactionId": null,
+      "transferAmount": null
+    }
+  ],
+  "Transaction": [
+    {
+      "id": "87badec6-e508-411c-ab7d-852961a44c86",
+      "accountId": "94dc5de7-63aa-49d3-b890-4445b038b97c",
+      "date": "2026-03-05T23:34:11.624+00:00",
+      "amount": 200000000,
+      "payee": "Starting Balance",
+      "categoryId": null,
+      "memo": "Initial Account Balance",
+      "transferAccountId": null,
+      "exchangeRate": null,
+      "transferInvestmentId": null,
+      "createdAt": "2026-03-05T23:34:11.628+00:00",
+      "updatedAt": "2026-03-05T23:34:11.628+00:00"
+    },
+    {
+      "id": "c913b608-c7ca-4324-8df4-831c84ed5e0d",
+      "accountId": "37dd35e8-fb08-4906-b730-5788019d5426",
+      "date": "2026-03-05T23:34:24.370+00:00",
+      "amount": 2000000,
+      "payee": "Starting Balance",
+      "categoryId": null,
+      "memo": "Initial Account Balance",
+      "transferAccountId": null,
+      "exchangeRate": null,
+      "transferInvestmentId": null,
+      "createdAt": "2026-03-05T23:34:24.370+00:00",
+      "updatedAt": "2026-03-05T23:34:24.370+00:00"
+    }
+  ],
+  "Subtransaction": []
+}
