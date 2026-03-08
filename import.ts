@@ -10,7 +10,7 @@ interface TestData {
   CategoryGroup: Array<{ id: string; name: string; order: number; [key: string]: unknown }>
   Category: Array<{ id: string; groupId: string; name: string; order: number }>
   CategoryBudget: Array<{ id: string; categoryId: string; currencyCode: string; month: string; amount: number }>
-  CategoryTarget: Array<{ id: string; categoryId: string; currencyCode: string; type: string; amount: number; targetDate: string | null; cadence: string | null; cadenceInterval: number | null }>
+  CategoryTarget: Array<{ id: string; categoryId: string; currencyCode: string; type: string; amount: number; targetDate: string | null; cadence: string | null; cadenceInterval: number | null; snoozedUntil: string | null }>
   Rule: Array<{ id: string; payeeContains: string; categoryId: string | null; memo: string | null; order: number }>
   Investment: Array<{ id: string; name: string; currencyCode: string; color: string | null; currentValue: number; totalDeposited: number; totalWithdrawn: number }>
   InvestmentValueHistory: Array<{ id: string; investmentId: string; date: string; currentValue: number; source: string; transferAmount: number | null; transactionId: string | null }>
