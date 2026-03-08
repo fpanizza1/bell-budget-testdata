@@ -21,33 +21,27 @@ interface TestData {
 async function main() {
   const projectRoot = path.resolve(__dirname, '..')
   const dbPath = path.resolve(projectRoot, 'dev.db')
+  const dbUrl = `file:${dbPath}`
 
-  // Ensure schema is up to date (creates DB if missing)
-  console.log('Syncing database schema...')
+  // Delete existing DB so we start completely fresh
+  if (fs.existsSync(dbPath)) {
+    console.log('Deleting existing database...')
+    fs.unlinkSync(dbPath)
+  }
+
+  // Create DB and push schema (uses absolute path to avoid CLI vs libsql mismatch)
+  console.log('Creating database and syncing schema...')
   execSync('npx prisma db push --accept-data-loss', {
     cwd: projectRoot,
     stdio: 'inherit',
+    env: { ...process.env, DATABASE_URL: dbUrl },
   })
 
-  const dbUrl = process.env.DATABASE_URL || `file:${dbPath}`
   const adapter = new PrismaLibSql({ url: dbUrl })
   const prisma = new PrismaClient({ adapter })
 
   const dataPath = process.argv[2] || path.join(__dirname, 'testdata.json')
   const data: TestData = JSON.parse(fs.readFileSync(dataPath, 'utf-8'))
-
-  console.log('Clearing existing data...')
-  await prisma.investmentValueHistory.deleteMany()
-  await prisma.subtransaction.deleteMany()
-  await prisma.transaction.deleteMany()
-  await prisma.categoryBudget.deleteMany()
-  await prisma.categoryTarget.deleteMany()
-  await prisma.category.deleteMany()
-  await prisma.categoryGroup.deleteMany()
-  await prisma.rule.deleteMany()
-  await prisma.investment.deleteMany()
-  await prisma.account.deleteMany()
-  await prisma.currency.deleteMany()
 
   console.log('Importing currencies...')
   for (const c of data.Currency) {
